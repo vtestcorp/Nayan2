@@ -1,0 +1,8 @@
+{
+  "deviceName": "OnePlus 5T",
+  "platformName": "Android",
+  "appPackage": "co.nayan.c3specialist_v2.qa_new",
+  "appActivity": "co.nayan.c3specialist_v2.SplashActivity",
+  "platformVersion": "9.0.11",
+  "noReset": "true"
+}

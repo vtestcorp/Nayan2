@@ -1,0 +1,13 @@
+{
+  "deviceName": "OnePlus 5T",
+  "udid":"c9f5edbb",
+  "udid old":"192.168.1.3:5555",
+  "platformName": "Android",
+  "platformVersion":"9.0.11",
+  "skipUnlock":"true",
+  "appPackage": "co.nayan.c3specialist_v2.qa_new",
+  "appActivity": "co.nayan.c3specialist_v2.SplashActivity",
+  "noReset": "false",
+  "unicodeKeyboard": "true",
+  "resetKeyboard":"true"
+}
