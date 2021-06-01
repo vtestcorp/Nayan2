@@ -23,8 +23,8 @@ public class TC_02_Verify_Data_Movement_Between_Specialist_Managers extends Base
 		dashBoardPage = new DashBoardPage(driver, test);
 
 //		  openApp();
-		  loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "Email"));
-		  loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "Password"));
+		  loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "s1_Email"));
+		  loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "s1_Password"));
 		  
 		  loginPage.clickSignInButton(); 
 		  loginPage.click_NextButton();

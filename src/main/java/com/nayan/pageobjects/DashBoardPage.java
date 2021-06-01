@@ -155,13 +155,13 @@ public class DashBoardPage {
 	}
 	
 	public void click_Profile_Button() throws IOException, InterruptedException {				
-		if(profileButton.isEnabled()){
+	/*	if(profileButton.isEnabled()){
 			applyWait.waitForElementToBeClickable(profileButton, 30).click();
 		}
 		else {
-			System.out.println("profile button is not enabled");
+			System.out.println("profile button is not enabled");*/
 			touchAction.tap(PointOption.point(896,1899)).perform();
-		}	
+//		}	
 			
 		
 		Screenshots.takeScreenshot(driver, "User clicked profile button");
@@ -176,7 +176,7 @@ public class DashBoardPage {
 			System.out.println("logout is enabled");
 		} else {
 			System.out.println("logout is not enabled");*/
-//			touchAction.tap(PointOption.point(519,1528)).perform();
+			touchAction.tap(PointOption.point(519,1528)).perform();
 //		}		
 		Screenshots.takeScreenshot(driver, "User clicked logout button");
 		test.log(Status.INFO, "User clicked logout button");

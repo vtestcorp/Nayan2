@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="253743" started-at="2021-05-31T17:44:54Z" finished-at="2021-05-31T17:49:08Z">
+  <suite name="Default suite" duration-ms="102077" started-at="2021-05-31T19:50:02Z" finished-at="2021-05-31T19:51:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="253743" started-at="2021-05-31T17:44:54Z" finished-at="2021-05-31T17:49:08Z">
+    <test name="Default test" duration-ms="102077" started-at="2021-05-31T19:50:02Z" finished-at="2021-05-31T19:51:44Z">
       <class name="com.nayan.Login.testcases.TC_02_Verify_Data_Movement_Between_Specialist_Managers">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.nayan.Login.testcases.TC_02_Verify_Data_Movement_Between_Specialist_Managers@4de8b406]" name="setUp" is-config="true" duration-ms="12623" started-at="2021-05-31T23:14:54Z" finished-at="2021-05-31T23:15:07Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.nayan.Login.testcases.TC_02_Verify_Data_Movement_Between_Specialist_Managers@4de8b406]" name="setUp" is-config="true" duration-ms="12925" started-at="2021-06-01T01:20:02Z" finished-at="2021-06-01T01:20:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verify_Data_Movement_Between_Specialist_Managers()[pri:0, instance:com.nayan.Login.testcases.TC_02_Verify_Data_Movement_Between_Specialist_Managers@4de8b406]" name="verify_Data_Movement_Between_Specialist_Managers" duration-ms="241051" started-at="2021-05-31T23:15:07Z" finished-at="2021-05-31T23:19:08Z">
+        <test-method status="FAIL" signature="verify_Data_Movement_Between_Specialist_Managers()[pri:0, instance:com.nayan.Login.testcases.TC_02_Verify_Data_Movement_Between_Specialist_Managers@4de8b406]" name="verify_Data_Movement_Between_Specialist_Managers" duration-ms="89067" started-at="2021-06-01T01:20:14Z" finished-at="2021-06-01T01:21:44Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
@@ -19,8 +19,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'DESKTOP-165ABPJ', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: OnePlus 5T, noReset: false, platformName: android, platformVersion: 9.0.11, skipUnlock: true, udid: c9f5edbb}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: c9f5edbb, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: c9f5edbb, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, skipUnlock: true, statBarHeight: 63, takesScreenshot: true, udid: c9f5edbb, viewportRect: {height: 1971, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: d489403b-965d-413f-bcaf-cea93fa71bd1
-*** Element info: {Using=xpath, value=//android.widget.ImageView[@resource-id='co.nayan.c3specialist_v2.qa_new:id/imageExpandIcon'][@package='co.nayan.c3specialist_v2.qa_new'][@index='3']}]]>
+Session ID: ffeff417-c31c-4083-8b0d-c6403e44046d]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
@@ -28,8 +27,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'DESKTOP-165ABPJ', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: OnePlus 5T, noReset: false, platformName: android, platformVersion: 9.0.11, skipUnlock: true, udid: c9f5edbb}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: c9f5edbb, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: c9f5edbb, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, skipUnlock: true, statBarHeight: 63, takesScreenshot: true, udid: c9f5edbb, viewportRect: {height: 1971, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: d489403b-965d-413f-bcaf-cea93fa71bd1
-*** Element info: {Using=xpath, value=//android.widget.ImageView[@resource-id='co.nayan.c3specialist_v2.qa_new:id/imageExpandIcon'][@package='co.nayan.c3specialist_v2.qa_new'][@index='3']}
+Session ID: ffeff417-c31c-4083-8b0d-c6403e44046d
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -43,24 +41,10 @@ Session ID: d489403b-965d-413f-bcaf-cea93fa71bd1
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.nayan.pageobjects.DashBoardPage.click_Expand_Button(DashBoardPage.java:141)
-	at com.nayan.Login.testcases.TC_02_Verify_Data_Movement_Between_Specialist_Managers.verify_Data_Movement_Between_Specialist_Managers(TC_02_Verify_Data_Movement_Between_Specialist_Managers.java:54)
+	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+	at com.nayan.pageobjects.DashBoardPage.selectArea(DashBoardPage.java:107)
+	at com.nayan.Login.testcases.TC_02_Verify_Data_Movement_Between_Specialist_Managers.verify_Data_Movement_Between_Specialist_Managers(TC_02_Verify_Data_Movement_Between_Specialist_Managers.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -91,7 +75,7 @@ Session ID: d489403b-965d-413f-bcaf-cea93fa71bd1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Data_Movement_Between_Specialist_Managers -->
-        <test-method status="FAIL" signature="checkResult(org.testng.ITestResult)[pri:0, instance:com.nayan.Login.testcases.TC_02_Verify_Data_Movement_Between_Specialist_Managers@4de8b406]" name="checkResult" is-config="true" duration-ms="0" started-at="2021-05-31T23:19:08Z" finished-at="2021-05-31T23:19:08Z">
+        <test-method status="FAIL" signature="checkResult(org.testng.ITestResult)[pri:0, instance:com.nayan.Login.testcases.TC_02_Verify_Data_Movement_Between_Specialist_Managers@4de8b406]" name="checkResult" is-config="true" duration-ms="0" started-at="2021-06-01T01:21:44Z" finished-at="2021-06-01T01:21:44Z">
           <params>
             <param index="0">
               <value>
@@ -106,7 +90,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'DESKTOP-165ABPJ', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: OnePlus 5T, noReset: false, platformName: android, platformVersion: 9.0.11, skipUnlock: true, udid: c9f5edbb}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: c9f5edbb, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: c9f5edbb, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, skipUnlock: true, statBarHeight: 63, takesScreenshot: true, udid: c9f5edbb, viewportRect: {height: 1971, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: d489403b-965d-413f-bcaf-cea93fa71bd1]]>
+Session ID: ffeff417-c31c-4083-8b0d-c6403e44046d]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.internal.thread.ThreadExecutionException: org.testng.internal.InvokeMethodRunnable$TestNGRuntimeException: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
@@ -114,7 +98,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'DESKTOP-165ABPJ', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: OnePlus 5T, noReset: false, platformName: android, platformVersion: 9.0.11, skipUnlock: true, udid: c9f5edbb}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: c9f5edbb, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: c9f5edbb, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, skipUnlock: true, statBarHeight: 63, takesScreenshot: true, udid: c9f5edbb, viewportRect: {height: 1971, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: d489403b-965d-413f-bcaf-cea93fa71bd1
+Session ID: ffeff417-c31c-4083-8b0d-c6403e44046d
 	at org.testng.internal.thread.FutureResultAdapter.get(FutureResultAdapter.java:25)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNewExecutor(MethodInvocationHelper.java:276)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:234)
@@ -145,7 +129,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'DESKTOP-165ABPJ', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: OnePlus 5T, noReset: false, platformName: android, platformVersion: 9.0.11, skipUnlock: true, udid: c9f5edbb}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: c9f5edbb, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: c9f5edbb, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, skipUnlock: true, statBarHeight: 63, takesScreenshot: true, udid: c9f5edbb, viewportRect: {height: 1971, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: d489403b-965d-413f-bcaf-cea93fa71bd1
+Session ID: ffeff417-c31c-4083-8b0d-c6403e44046d
 	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:61)
 	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
 	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
@@ -158,7 +142,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'DESKTOP-165ABPJ', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., databaseEnabled: false, desired: {appActivity: co.nayan.c3specialist_v2.Sp..., appPackage: co.nayan.c3specialist_v2.qa..., deviceName: OnePlus 5T, noReset: false, platformName: android, platformVersion: 9.0.11, skipUnlock: true, udid: c9f5edbb}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: c9f5edbb, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: c9f5edbb, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, skipUnlock: true, statBarHeight: 63, takesScreenshot: true, udid: c9f5edbb, viewportRect: {height: 1971, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: d489403b-965d-413f-bcaf-cea93fa71bd1
+Session ID: ffeff417-c31c-4083-8b0d-c6403e44046d
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -188,7 +172,7 @@ Session ID: d489403b-965d-413f-bcaf-cea93fa71bd1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkResult -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.nayan.Login.testcases.TC_02_Verify_Data_Movement_Between_Specialist_Managers@4de8b406]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-05-31T23:19:08Z" finished-at="2021-05-31T23:19:08Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.nayan.Login.testcases.TC_02_Verify_Data_Movement_Between_Specialist_Managers@4de8b406]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-06-01T01:21:44Z" finished-at="2021-06-01T01:21:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

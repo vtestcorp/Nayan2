@@ -31,6 +31,7 @@ public class DefineConstants {
 	// Nayan Module Json file	
 	public static final String TC_01_Login_With_Valid_Credentials = TestData_Folder + "//" + Nayan_TestData_Folder + "//"+ "TC_01_Login_With_Valid_Credentials.json";
 	public static final String TC_02_Verify_Data_Movement_Between_Specialist_Managers = TestData_Folder + "//" + Nayan_TestData_Folder + "//"+ "TC_02_Verify_Data_Movement_Between_Specialist_Managers.json";
+	public static final String TC_03_Verify_Data_Movement_Between_Managers = TestData_Folder + "//" + Nayan_TestData_Folder + "//"+ "TC_03_Verify_Data_Movement_Between_Managers.json";
 	
 			
 }
