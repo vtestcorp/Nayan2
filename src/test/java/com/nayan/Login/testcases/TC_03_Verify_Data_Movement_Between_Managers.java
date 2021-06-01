@@ -60,106 +60,106 @@ public class TC_03_Verify_Data_Movement_Between_Managers extends BaseClass {
 		  dashBoardPage.click_Profile_Button();
 		  dashBoardPage.click_Logout_Button();
 		  
-		// m1 login
-		loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m1_Email"));
-		loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m1_Password"));
-		loginPage.clickSignInButton();
-		loginPage.click_NextButton();
-		loginPage.click_NextButton();
-		loginPage.click_StartWorking_Button();
-		dashBoardPage.click_English_Button();
-		dashBoardPage.click_StartWork_Button();
+		  // m1 login
+		  loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m1_Email"));
+		  loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m1_Password"));
+		  loginPage.clickSignInButton();
+		  loginPage.click_NextButton();
+		  loginPage.click_NextButton();
+		  loginPage.click_StartWorking_Button();
+		  dashBoardPage.click_English_Button();
+		  dashBoardPage.click_StartWork_Button();
 
-		// m1 Validate Record 1
-		dashBoardPage.click_True_Button();
-		// m1 Validate Record 2
-		dashBoardPage.click_True_Button();
-		// m1 Validate Record 3
-		dashBoardPage.click_True_Button();
-		// m1 Validate Record 4
-		dashBoardPage.click_True_Button();
-		// m1 Validate Record 5
-		dashBoardPage.click_True_Button();
-		// m1 logout
-		dashBoardPage.click_Back_Button();
-		dashBoardPage.click_Profile_Button();
-		dashBoardPage.click_Logout_Button();
+		  // m1 Validate Record 1
+		  dashBoardPage.click_True_Button();
+		  // m1 Validate Record 2
+		  dashBoardPage.click_True_Button();
+		  // m1 Validate Record 3
+		  dashBoardPage.click_True_Button();
+		  // m1 Validate Record 4
+		  dashBoardPage.click_True_Button();
+		  // m1 Validate Record 5
+		  dashBoardPage.click_True_Button();
+		  // m1 logout
+		  dashBoardPage.click_Back_Button();
+		  dashBoardPage.click_Profile_Button();
+		  dashBoardPage.click_Logout_Button();
 		       			
-				// m2 login
-				loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m2_Email"));
-				loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m2_Password"));
-				loginPage.clickSignInButton();
-				loginPage.click_NextButton();
-				loginPage.click_NextButton();
-				loginPage.click_StartWorking_Button();
-				dashBoardPage.click_English_Button();
-				dashBoardPage.click_StartWork_Button();
+		  // m2 login
+		  loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m2_Email"));
+		  loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m2_Password"));
+		  loginPage.clickSignInButton();
+		  loginPage.click_NextButton();
+		  loginPage.click_NextButton();
+		  loginPage.click_StartWorking_Button();
+		  dashBoardPage.click_English_Button();
+		  dashBoardPage.click_StartWork_Button();
 
-				// Validate Record 1
-				dashBoardPage.click_True_Button();
-				// Validate Record 2
-				dashBoardPage.click_True_Button();
-				// Validate Record 3
-				dashBoardPage.click_True_Button();
-				// Validate Record 4
-				dashBoardPage.click_True_Button();
-				// Validate Record 5
-				dashBoardPage.click_True_Button();
-				// m2 logout
-				dashBoardPage.click_Back_Button();
-				dashBoardPage.click_Profile_Button();
-				dashBoardPage.click_Logout_Button();
+		  // Validate Record 1
+		  dashBoardPage.click_True_Button();
+		  // Validate Record 2
+		  dashBoardPage.click_True_Button();
+		  // Validate Record 3
+		  dashBoardPage.click_True_Button();
+		  // Validate Record 4
+		  dashBoardPage.click_True_Button();
+		  // Validate Record 5
+		  dashBoardPage.click_True_Button();
+		  // m2 logout
+		  dashBoardPage.click_Back_Button();
+		  dashBoardPage.click_Profile_Button();
+		  dashBoardPage.click_Logout_Button();
 				
-				// m3 login
-				loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m3_Email"));
-				loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m3_Password"));
-				loginPage.clickSignInButton();
-				loginPage.click_NextButton();
-				loginPage.click_NextButton();
-				loginPage.click_StartWorking_Button();
-				dashBoardPage.click_English_Button();
-				dashBoardPage.click_StartWork_Button();
+		  // m3 login
+		  loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m3_Email"));
+		  loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m3_Password"));
+		  loginPage.clickSignInButton();
+		  loginPage.click_NextButton();
+		  loginPage.click_NextButton();
+		  loginPage.click_StartWorking_Button();
+		  dashBoardPage.click_English_Button();
+		  dashBoardPage.click_StartWork_Button();
 
-				// Validate Record 1
-				dashBoardPage.click_True_Button();
-				// Validate Record 2
-				dashBoardPage.click_True_Button();
-				// Validate Record 3
-				dashBoardPage.click_True_Button();
-				// Validate Record 4
-				dashBoardPage.click_True_Button();
-				// Validate Record 5
-				dashBoardPage.click_True_Button();
-				// m3 logout
-				dashBoardPage.click_Back_Button();
-				dashBoardPage.click_Profile_Button();
-				dashBoardPage.click_Logout_Button();
+		  // Validate Record 1
+		  dashBoardPage.click_True_Button();
+		  // Validate Record 2
+		  dashBoardPage.click_True_Button();
+		  // Validate Record 3
+		  dashBoardPage.click_True_Button();
+		  // Validate Record 4
+		  dashBoardPage.click_True_Button();
+		  // Validate Record 5
+		  dashBoardPage.click_True_Button();
+		  // m3 logout
+		  dashBoardPage.click_Back_Button();
+		  dashBoardPage.click_Profile_Button();
+		  dashBoardPage.click_Logout_Button();
 				
-				// m4 login
-				loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m4_Email"));
-				loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m4_Password"));
-				loginPage.clickSignInButton();
-				loginPage.click_NextButton();
-				loginPage.click_NextButton();
-				loginPage.click_StartWorking_Button();
-				dashBoardPage.click_English_Button();
-				dashBoardPage.click_StartWork_Button();
+		  // m4 login
+		  loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m4_Email"));
+		  loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_03_Verify_Data_Movement_Between_Managers, "m4_Password"));
+		  loginPage.clickSignInButton();
+		  loginPage.click_NextButton();
+		  loginPage.click_NextButton();
+		  loginPage.click_StartWorking_Button();
+		  dashBoardPage.click_English_Button();
+		  dashBoardPage.click_StartWork_Button();
 
-				// Validate Record 1
-				dashBoardPage.click_True_Button();
-				// Validate Record 2
-				dashBoardPage.click_True_Button();
-				// Validate Record 3
-				dashBoardPage.click_True_Button();
-				// Validate Record 4
-				dashBoardPage.click_True_Button();
-				// Validate Record 5
-				dashBoardPage.click_True_Button();
-				// m4 logout
-				dashBoardPage.click_Back_Button();
-				dashBoardPage.click_Profile_Button();
-				dashBoardPage.click_Logout_Button();
+		  // Validate Record 1
+		  dashBoardPage.click_True_Button();
+		  // Validate Record 2
+		  dashBoardPage.click_True_Button();
+		  // Validate Record 3
+		  dashBoardPage.click_True_Button();
+		  // Validate Record 4
+		  dashBoardPage.click_True_Button();
+		  // Validate Record 5
+		  dashBoardPage.click_True_Button();
+		  // m4 logout
+		  dashBoardPage.click_Back_Button();
+		  dashBoardPage.click_Profile_Button();
+		  dashBoardPage.click_Logout_Button();
 				
-		        Thread.sleep(1000);
+		  Thread.sleep(1000);
 	}
 }

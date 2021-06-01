@@ -79,7 +79,7 @@ public class TC_02_Verify_Data_Movement_Between_Specialist_Managers extends Base
 		dashBoardPage.click_Profile_Button();
 		dashBoardPage.click_Logout_Button();
 
-		/*		// s3 login
+		// s3 login
 		loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "s3_Email"));
 		loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "s3_Password"));
 		loginPage.clickSignInButton();
@@ -91,7 +91,11 @@ public class TC_02_Verify_Data_Movement_Between_Specialist_Managers extends Base
 
 		// s3 Validate Record 1
 		dashBoardPage.click_True_Button();
-		// Validate Record 2
+		// s3 Validate Record 2
+		dashBoardPage.click_True_Button();
+		// s3 Validate Record 3
+		dashBoardPage.click_True_Button();
+		// s3 Validate Record 4
 		dashBoardPage.click_True_Button();
 		// s3 logout
 		dashBoardPage.click_Back_Button();
@@ -112,91 +116,106 @@ public class TC_02_Verify_Data_Movement_Between_Specialist_Managers extends Base
 		dashBoardPage.click_True_Button();
 		// Validate Record 2
 		dashBoardPage.click_True_Button();
+		// Validate Record 3
+		dashBoardPage.click_True_Button();
+		// Validate Record 4
+		dashBoardPage.click_True_Button();
 		// s4 logout
 		dashBoardPage.click_Back_Button();
 		dashBoardPage.click_Profile_Button();
-		dashBoardPage.click_Logout_Button();*/
+		dashBoardPage.click_Logout_Button();
 
-		        // m1 login
-				loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m1_Email"));
-				loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m1_Password"));
-				loginPage.clickSignInButton();
-				loginPage.click_NextButton();
-				loginPage.click_NextButton();
-				loginPage.click_StartWorking_Button();
-				dashBoardPage.click_English_Button();
-				dashBoardPage.click_StartWork_Button();
+		// m1 login
+		loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m1_Email"));
+		loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m1_Password"));
+		loginPage.clickSignInButton();
+		loginPage.click_NextButton();
+		loginPage.click_NextButton();
+		loginPage.click_StartWorking_Button();
+		dashBoardPage.click_English_Button();
+		dashBoardPage.click_StartWork_Button();
 
-				// Validate Record 1
-				dashBoardPage.click_False_Button();
-				// Validate Record 2
-				dashBoardPage.click_False_Button();
-				// Validate Record 3
-				dashBoardPage.click_False_Button();
-				// Validate Record 4
-				dashBoardPage.click_False_Button();
-				// m1 logout
-				dashBoardPage.click_Back_Button();
-				dashBoardPage.click_Profile_Button();
-				dashBoardPage.click_Logout_Button();
-				/*
-				// m2 login
-				loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m2_Email"));
-				loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m2_Password"));
-				loginPage.clickSignInButton();
-				loginPage.click_NextButton();
-				loginPage.click_NextButton();
-				loginPage.click_StartWorking_Button();
-				dashBoardPage.click_English_Button();
-				dashBoardPage.click_StartWork_Button();
-
-				// Validate Record 1
-				dashBoardPage.click_False_Button();
-				// Validate Record 2
-				dashBoardPage.click_False_Button();
-				// m2 logout
-				dashBoardPage.click_Back_Button();
-				dashBoardPage.click_Profile_Button();
-				dashBoardPage.click_Logout_Button();
+		// Reject Record 1
+		dashBoardPage.click_False_Button();
+		// Reject Record 2
+		dashBoardPage.click_False_Button();
+		// Reject Record 3
+		dashBoardPage.click_False_Button();
+		// Reject Record 4
+		dashBoardPage.click_False_Button();
+		// m1 logout
+		dashBoardPage.click_Back_Button();
+		dashBoardPage.click_Profile_Button();
+		dashBoardPage.click_Logout_Button();
 				
-				// m3 login
-				loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m3_Email"));
-				loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m3_Password"));
-				loginPage.clickSignInButton();
-				loginPage.click_NextButton();
-				loginPage.click_NextButton();
-				loginPage.click_StartWorking_Button();
-				dashBoardPage.click_English_Button();
-				dashBoardPage.click_StartWork_Button();
+		// m2 login
+		loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m2_Email"));
+		loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m2_Password"));
+		loginPage.clickSignInButton();
+		loginPage.click_NextButton();
+		loginPage.click_NextButton();
+		loginPage.click_StartWorking_Button();
+		dashBoardPage.click_English_Button();
+		dashBoardPage.click_StartWork_Button();
 
-				// Validate Record 1
-				dashBoardPage.click_False_Button();
-				// Validate Record 2
-				dashBoardPage.click_False_Button();
-				// m3 logout
-				dashBoardPage.click_Back_Button();
-				dashBoardPage.click_Profile_Button();
-				dashBoardPage.click_Logout_Button();
+		// Reject Record 1
+		dashBoardPage.click_False_Button();
+		// Reject Record 2
+		dashBoardPage.click_False_Button();
+		// Reject Record 3
+		dashBoardPage.click_False_Button();
+		// Reject Record 4
+		dashBoardPage.click_False_Button();
+		// m2 logout
+		dashBoardPage.click_Back_Button();
+		dashBoardPage.click_Profile_Button();
+		dashBoardPage.click_Logout_Button();
 				
-				// m4 login
-				loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m4_Email"));
-				loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m4_Password"));
-				loginPage.clickSignInButton();
-				loginPage.click_NextButton();
-				loginPage.click_NextButton();
-				loginPage.click_StartWorking_Button();
-				dashBoardPage.click_English_Button();
-				dashBoardPage.click_StartWork_Button();
+		// m3 login
+		loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m3_Email"));
+		loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m3_Password"));
+		loginPage.clickSignInButton();
+		loginPage.click_NextButton();
+		loginPage.click_NextButton();
+		loginPage.click_StartWorking_Button();
+		dashBoardPage.click_English_Button();
+		dashBoardPage.click_StartWork_Button();
 
-				// Validate Record 1
-				dashBoardPage.click_False_Button();
-				// Validate Record 2
-				dashBoardPage.click_False_Button();
-				// m4 logout
-				dashBoardPage.click_Back_Button();
-				dashBoardPage.click_Profile_Button();
-				dashBoardPage.click_Logout_Button();*/
-		
+		// Reject Record 1
+		dashBoardPage.click_False_Button();
+		// Reject Record 2
+		dashBoardPage.click_False_Button();
+		// Reject Record 3
+		dashBoardPage.click_False_Button();
+		// Reject Record 4
+		dashBoardPage.click_False_Button();
+		// m3 logout
+		dashBoardPage.click_Back_Button();
+		dashBoardPage.click_Profile_Button();
+		dashBoardPage.click_Logout_Button();
+				
+		// m4 login
+		loginPage.enterEmail(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m4_Email"));
+		loginPage.enterPassword(JsonUtils.getData(DefineConstants.TC_02_Verify_Data_Movement_Between_Specialist_Managers, "m4_Password"));
+		loginPage.clickSignInButton();
+		loginPage.click_NextButton();
+		loginPage.click_NextButton();
+		loginPage.click_StartWorking_Button();
+		dashBoardPage.click_English_Button();
+		dashBoardPage.click_StartWork_Button();
+
+		// Approve Record 1
+		dashBoardPage.click_True_Button();
+		// Approve Record 2
+		dashBoardPage.click_True_Button();
+		// Approve Record 3
+		dashBoardPage.click_True_Button();
+		// Approve Record 4
+		dashBoardPage.click_True_Button();
+		// m4 logout
+		dashBoardPage.click_Back_Button();
+		dashBoardPage.click_Profile_Button();
+		dashBoardPage.click_Logout_Button();
 		
 		Thread.sleep(1000);
 	}
