@@ -17,7 +17,7 @@ public class TC_01_Login_With_Valid_Credentials extends BaseClass {
 	@Test(enabled = true)
 	public void loginWithValidCredentials() throws Exception {
 
-		test = extent.createTest("TC_02_Login_With_Valid_Credentials","User should be able to login with valid credentials");
+		test = extent.createTest("TC_01_Login_With_Valid_Credentials","User should be able to login with valid credentials");
 
 		loginPage = new LoginPage(driver, test);
 		dashBoardPage = new DashBoardPage(driver, test);

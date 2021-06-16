@@ -2,24 +2,17 @@ package com.nayan.pageobjects;
 
 import java.io.IOException;
 
-import org.bson.codecs.ByteArrayCodec;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import helperMethods.Screenshots;
 import helperMethods.WaitTypes;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileBy.ByAccessibilityId;
-import io.appium.java_client.MobileBy.ByAndroidUIAutomator;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 
 public class LoginPage {
 	private WebDriver driver;

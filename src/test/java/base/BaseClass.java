@@ -10,16 +10,12 @@ import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -111,7 +107,7 @@ public class BaseClass {
 		} else if (DefineConstants.browser.equalsIgnoreCase("Android")) {
 			DesiredCapabilities caps = new DesiredCapabilities();
 			caps.setCapability("deviceName", JsonUtils.getData(DefineConstants.Desired_Capabilities, "deviceName"));
-			caps.setCapability("udid", JsonUtils.getData(DefineConstants.Desired_Capabilities, "udid"));
+			caps.setCapability("udid", JsonUtils.getData(DefineConstants.Desired_Capabilities, "udid_emu"));
 			caps.setCapability("platformName", JsonUtils.getData(DefineConstants.Desired_Capabilities, "platformName"));
 			caps.setCapability("platformVersion",JsonUtils.getData(DefineConstants.Desired_Capabilities, "platformVersion"));
 			caps.setCapability("skipUnlock", JsonUtils.getData(DefineConstants.Desired_Capabilities, "skipUnlock"));
@@ -134,7 +130,7 @@ public class BaseClass {
 	public void openApp() throws MalformedURLException {
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("deviceName", JsonUtils.getData(DefineConstants.Desired_Capabilities, "deviceName"));
-		caps.setCapability("udid", JsonUtils.getData(DefineConstants.Desired_Capabilities, "udid"));
+		caps.setCapability("udid", JsonUtils.getData(DefineConstants.Desired_Capabilities, "udid5T"));
 		caps.setCapability("platformName", JsonUtils.getData(DefineConstants.Desired_Capabilities, "platformName"));
 		caps.setCapability("platformVersion",JsonUtils.getData(DefineConstants.Desired_Capabilities, "platformVersion"));
 		caps.setCapability("skipUnlock", JsonUtils.getData(DefineConstants.Desired_Capabilities, "skipUnlock"));
@@ -161,7 +157,7 @@ public class BaseClass {
 		RestAssured.baseURI = "https://c3-v2-qa-new.nayan.co/api/qa/maintenance";
 		RequestSpecification requestSpecification = RestAssured.given().header("api-key", "hoEnvzC8X95KHvxFH3fuC3HY");
 
-		Response response = requestSpecification.get("/reset_records");
+		Response response = requestSpecification.get("/reset_records?workflow=xzbdl");
 
 		System.out.println("Status code is " + response.getStatusCode());
 

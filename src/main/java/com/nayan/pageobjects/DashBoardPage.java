@@ -2,9 +2,7 @@ package com.nayan.pageobjects;
 
 import java.io.IOException;
 import java.time.Duration;
-import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -16,7 +14,6 @@ import com.aventstack.extentreports.Status;
 
 import helperMethods.Screenshots;
 import helperMethods.WaitTypes;
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
@@ -80,7 +77,31 @@ public class DashBoardPage {
 	
 	@FindBy(xpath = "//android.widget.ImageView[@resource-id='co.nayan.c3specialist_v2.qa_new:id/falseBtn'][@package='co.nayan.c3specialist_v2.qa_new'][@index='1']")
 	private WebElement falseButton;
-
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id='co.nayan.c3specialist_v2.qa_new:id/positiveBtn'][@text='OK'][@package='co.nayan.c3specialist_v2.qa_new'][@index='0']")
+	private WebElement positiveButton;
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id='co.nayan.c3specialist_v2.qa_new:id/rejectBtn'][@text='REJECT'][@package='co.nayan.c3specialist_v2.qa_new'][@index='0']")
+	private WebElement rejectButton;
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id='co.nayan.c3specialist_v2.qa_new:id/approveFb'][@package='co.nayan.c3specialist_v2.qa_new'][@index='1']")
+	private WebElement approveButton;
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id='co.nayan.c3specialist_v2.qa_new:id/positiveBtn'][@package='co.nayan.c3specialist_v2.qa_new'][@index='1']")
+	private WebElement rejectButtonPopUp;
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id='co.nayan.c3specialist_v2.qa_new:id/positiveBtn'][@package='co.nayan.c3specialist_v2.qa_new'][@index='1']")
+	private WebElement approveButtonPopUp;
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id='co.nayan.c3specialist_v2.qa_new:id/submitFb'][@package='co.nayan.c3specialist_v2.qa_new'][@index='2']")
+	private WebElement submitRecordsButton;
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id='co.nayan.c3specialist_v2.qa_new:id/positiveBtn'][@package='co.nayan.c3specialist_v2.qa_new'][@index='1']")
+	private WebElement submitRecordsButtonPopUp;
+	
+	@FindBy(xpath = "//android.widget.ImageView[@resource-id='co.nayan.c3specialist_v2.qa_new:id/backIv'][@package='co.nayan.c3specialist_v2.qa_new'][@index='0']")
+	private WebElement backButton;
+		
 	public void click_English_Button() throws IOException, InterruptedException {
 		applyWait.waitForElementToBeClickable(englishText_Button, 30).click();
 		Screenshots.takeScreenshot(driver, "User clicked english button");
@@ -90,9 +111,11 @@ public class DashBoardPage {
 	public void click_StartWork_Button() throws IOException, InterruptedException {
 		applyWait.waitForElementToBeClickable(startWork_Button, 30).click();
 //		touchAction.tap(PointOption.point(787,1341)).perform();
+		/*Screenshots.takeScreenshot(driver, "User clicked on start work button");
+		test.log(Status.INFO, "User clicked on start work button");*/
+		Thread.sleep(6000L);
 		Screenshots.takeScreenshot(driver, "User clicked on start work button");
 		test.log(Status.INFO, "User clicked on start work button");
-		Thread.sleep(10000L);
 	}
 
 	public void click_Select_Button() throws IOException, InterruptedException {
@@ -124,17 +147,15 @@ public class DashBoardPage {
 		Thread.sleep(3000);
 	}
 
-	public void click_Back_Button() throws IOException, InterruptedException {
-		/*applyWait.waitForElementToBeClickable(back_Button, 30).click();
-		List<WebElement> buttons=driver.findElements(By.className("android.widget.ImageView"));
-		System.out.println("total buttons "+buttons);
-		buttons.get(0).click();*/
-		
-//		driver.navigate().back();
-		touchAction.tap(PointOption.point(95,81)).perform();
-		Screenshots.takeScreenshot(driver, "User clicked back button");
+	public void click_Back_Button() {		
+		try {
+			applyWait.waitForElementToBeClickable(back_Button, 30).click();
+			Screenshots.takeScreenshot(driver, "User clicked back button");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		test.log(Status.INFO, "User clicked back button");
-		// Thread.sleep(3000);
 	}
 
 	public void click_Expand_Button() throws IOException, InterruptedException {
@@ -154,17 +175,20 @@ public class DashBoardPage {
 		Thread.sleep(3000);
 	}
 	
-	public void click_Profile_Button() throws IOException, InterruptedException {				
-	/*	if(profileButton.isEnabled()){
+	public void click_Profile_Button() {
+		try {
+		if(profileButton.isEnabled()){
 			applyWait.waitForElementToBeClickable(profileButton, 30).click();
 		}
-		else {
-			System.out.println("profile button is not enabled");*/
+		/*else {
+			System.out.println("profile button is not enabled");
 			touchAction.tap(PointOption.point(896,1899)).perform();
-//		}	
-			
-		
+		}*/				
 		Screenshots.takeScreenshot(driver, "User clicked profile button");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		test.log(Status.INFO, "User clicked profile button");
 		// Thread.sleep(3000);
 	}
@@ -183,17 +207,129 @@ public class DashBoardPage {
 		// Thread.sleep(3000);
 	}
 	
-	public void click_True_Button() throws IOException, InterruptedException {
-		applyWait.waitForElementToBeClickable(trueButton, 30).click();
+	public void click_True_Button() {
+		try {
+		applyWait.waitForElementToBeClickable(trueButton, 30).click();		
 		Screenshots.takeScreenshot(driver, "User clicked true button");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		test.log(Status.INFO, "User clicked true button");
 		// Thread.sleep(3000);
 	}
 	
-	public void click_False_Button() throws IOException, InterruptedException {
-		applyWait.waitForElementToBeClickable(falseButton, 30).click();
-		Screenshots.takeScreenshot(driver, "User clicked false button");
+	public void click_False_Button() {
+		try {
+		applyWait.waitForElementToBeClickable(falseButton, 30).click();		
+			Screenshots.takeScreenshot(driver, "User clicked false button");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		test.log(Status.INFO, "User clicked false button");
 		// Thread.sleep(3000);
 	}
+	
+	public void click_Positive_Button(){
+		try {
+		applyWait.waitForElementToBeClickable(positiveButton, 30).click();		
+		Screenshots.takeScreenshot(driver, "User clicked positive button");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		test.log(Status.INFO, "User clicked positive button");
+		// Thread.sleep(3000);
+	}
+	
+	public void longPress(int start_x, int start_y) throws Exception {
+		new TouchAction((PerformsTouchActions) driver).press(PointOption.point(start_x, start_y))
+				.waitAction(WaitOptions.waitOptions(Duration.ofMillis(4000))).perform();						
+		Screenshots.takeScreenshot(driver, "User selected image");
+		test.log(Status.INFO, "User selected image");
+		Thread.sleep(3000);
+	}
+	
+	public void click(int start_x, int start_y) throws Exception {
+		new TouchAction((PerformsTouchActions)driver)
+        .tap(PointOption.point(start_x,start_y))
+        .waitAction(WaitOptions.waitOptions(Duration.ofMillis(2000))).perform();						
+		Screenshots.takeScreenshot(driver, "User selected image");
+		test.log(Status.INFO, "User selected image");
+		Thread.sleep(3000);
+	}
+	
+	public void click_Reject_Button(){
+		try {
+		applyWait.waitForElementToBeClickable(rejectButton, 30).click();		
+		Screenshots.takeScreenshot(driver, "User clicked reject button");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		test.log(Status.INFO, "User clicked reject button");
+		// Thread.sleep(3000);
+	}
+	
+	public void click_RejectPopUp_Button(){
+		try {
+		applyWait.waitForElementToBeClickable(rejectButtonPopUp, 30).click();		
+		Screenshots.takeScreenshot(driver, "User clicked reject button on Pop up");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		test.log(Status.INFO, "User clicked reject button on Pop up");
+		// Thread.sleep(3000);
+	}
+	
+	public void click_Approve_Button(){
+		try {
+		applyWait.waitForElementToBeClickable(approveButton, 30).click();		
+		Screenshots.takeScreenshot(driver, "User clicked approve button");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		test.log(Status.INFO, "User clicked approve button");
+		// Thread.sleep(3000);
+	}
+	
+	public void click_ApprovePopUp_Button(){
+		try {
+		applyWait.waitForElementToBeClickable(approveButtonPopUp, 30).click();		
+		Screenshots.takeScreenshot(driver, "User clicked approve button on Pop up");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		test.log(Status.INFO, "User clicked approve button on Pop up");
+		// Thread.sleep(3000);
+	}
+	
+	public void click_SubmitRecords_Button() {
+		try {
+		applyWait.waitForElementToBeClickable(submitRecordsButton, 30).click();		
+		Screenshots.takeScreenshot(driver, "User clicked submit records button");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		test.log(Status.INFO, "User clicked submit records button");
+		// Thread.sleep(3000);
+	}
+	
+	public void click_SubmitRecordsButtonPopUp(){
+		try {
+		applyWait.waitForElementToBeClickable(submitRecordsButtonPopUp, 30).click();		
+			Screenshots.takeScreenshot(driver, "User clicked submit records button on pop up");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		test.log(Status.INFO, "User clicked submit records button on pop up");
+		// Thread.sleep(3000);
+	}
+		
 }
